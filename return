@@ -1,0 +1,40 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int addNumber(int a, int b) {
+    return a+b;
+}
+int subtract(int a,int b) {
+    return a-b;
+}
+float multiply(int a,int b) {
+    return a*b;
+}
+float divsision(int a,int b) {
+    return a/b;
+}// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+int main() { int z,x,s;
+ cout<<"ENTER TWO NUMBERS ";
+    cin>>z>>x;
+    cout<<"You can add them,subtract,divide,or multiply\n";
+    cout<<"1. ADD TWO NUM\n";
+    cout<<"2. SUBTRACT\n";
+    cout<<"3. MULTIPLY\n";
+    cout<<"4. DIVIDE\n";
+    cout<<"5. EXIT\n";
+    cin>>s;
+    switch (s) {
+        case 1: cout<<" Add is "<<addNumber(z,x);
+            break;
+        case 2: cout<<" Sub is "<<subtract(z,x);
+            break;
+        case 3: cout<<"Multiply is "<<multiply(z,x);
+            break;
+        case 4:cout<<"Division is "<<divsision(z,x);
+        case 5:cout<<"EXIT";
+            break;
+        default:cout<<"Enter number between 1 to 5";
+            cin>>s;
+    }
+    return 0;}
+    
